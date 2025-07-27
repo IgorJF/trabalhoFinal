@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin: 0 10px; 
+}
+
+.links a {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.botao-agendar button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #007bff, #65affe);
+    border: none;
+    border-radius: 20px;
+}
+
+.botao-agendar a{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}

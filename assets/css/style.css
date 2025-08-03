@@ -1,33 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
 }
 
 nav {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     background-color: #f8f8f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    width: 50px; 
+    width: 50px;
     height: auto;
 }
 
 .links ul {
     list-style-type: none;
-    display: flex; 
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 .links li {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .links a {
@@ -45,7 +45,7 @@ nav {
     border-radius: 20px;
 }
 
-.botao-agendar a{
+.botao-agendar a {
     font-weight: bold;
     font-size: 14px;
     color: white;
@@ -60,26 +60,26 @@ header {
 }
 
 .header-content {
-    width: 45%; 
+    width: 45%;
 }
 
-.header-content p{
+.header-content p {
     font-size: 20px;
     text-align: justify;
 }
 
-.header-content h1{
+.header-content h1 {
     font-size: 48px;
 }
 
-.header-button button{
+.header-button button {
     padding: 24px 100px;
     background: linear-gradient(to right, #007bff, #65affe);
     border: none;
     border-radius: 10px;
 }
 
-.header-button a{
+.header-button a {
     font-weight: bold;
     font-size: 24px;
     color: white;
@@ -87,7 +87,7 @@ header {
 }
 
 .header-img {
-    width: 45%; 
+    width: 45%;
 }
 
 .header-img img {
@@ -96,7 +96,100 @@ header {
     display: block;
 }
 
-.main{
+.main {
     background-color: blue;
     margin-top: -20px;
+}
+
+footer {
+    background: linear-gradient(to bottom, #007bff, #65affe);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-basis: 200px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer img {
+    width: 100px;
+    height: auto;
+}
+
+.nome p {
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.endereco {
+    flex-basis: 300px;
+}
+
+.endereco p:first-child {
+    font-weight: 600;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+.endereco-texto {
+    display: flex;
+    align-items: center;
+}
+
+.endereco-texto img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.endereco-texto p {
+    font-size: 16px;
+}
+
+.redes-sociais {
+    flex-basis: 150px;
+}
+
+.redes-sociais p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.social-icons a{
+    margin-left: 10px;
+}
+
+.social-icons a:first-child {
+    margin-left: 0;
+}
+
+.botao-footer{
+    margin-top: 40px;
 }

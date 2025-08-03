@@ -35,7 +35,11 @@ nav {
     text-decoration: none;
     padding: 15px;
     color: #333;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.links a:hover{
+    color: #007bff;
 }
 
 .botao-agendar button {
@@ -50,6 +54,14 @@ nav {
     font-size: 14px;
     color: white;
     text-decoration: none;
+}
+
+.botao-agendar button:hover{
+    background: rgb(201, 201, 250);
+}
+
+.botao-agendar a:hover{
+    color: #007bff;
 }
 
 header {
@@ -193,3 +205,4 @@ footer {
 .botao-footer{
     margin-top: 40px;
 }
+

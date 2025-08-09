@@ -380,7 +380,12 @@ header {
     height: 100px;
 }
 
-.formulario button {
+.formulario .botoes{
+     display: flex;
+}
+
+.formulario .botoes button{
+    display: inline-block;
     width: 100%;
     padding: 15px;
     background-color: white;
@@ -389,7 +394,10 @@ header {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
+}
+
+.formulario button:first-child {
+    margin-right: 10px;
 }
 
 .formulario button:hover {

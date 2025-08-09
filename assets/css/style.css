@@ -1,342 +1,480 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; 
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navegação */
 nav {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    width: 100%; /*tive que colocar por que não está ocupando 100% do espaço*/
+    z-index: 10; /*só ficou na frente dos itens com isso*/
 }
 
 .logo img {
-    width: 50px; 
-    height: auto;
+    width: 70px;
 }
 
 .links ul {
-    list-style-type: none;
-    display: flex; 
-    margin: 0;
-    padding: 0;
+    display: flex;
+    list-style: none;
 }
 
 .links li {
-    margin: 0 10px; 
+    margin: 0 15px;
 }
 
 .links a {
-    text-align: center;
-    text-decoration: none;
-    padding: 15px;
     color: #333;
     font-weight: 500;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #007bff;
 }
 
 .botao-agendar button {
-    padding: 12px 24px;
-    background: linear-gradient(to right, #007bff, #65affe);
+    padding: 12px 25px;
+    background: linear-gradient(to left, #007bff, #00bfff);
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
 .botao-agendar a{
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
+.botao-agendar button:hover {
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px 0 80px;
+    padding: 80px 80px;
 }
 
 .header-content {
-    width: 45%; 
+    width: 50%;
 }
 
-.header-content p{
-    font-size: 20px;
-    text-align: justify;
-}
-
-.header-content h1{
-    font-size: 48px;
-}
-
-.header-button button{
-    padding: 24px 100px;
-    background: linear-gradient(to right, #007bff, #65affe);
-    border: none;
-    border-radius: 10px;
-}
-
-.header-button a{
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-}
-
-.header-img {
-    width: 45%; 
-}
-
-.header-img img {
-    width: 110%;
-    height: auto;
-    display: block;
-}
-
-/*TRATAMENTOS*/
-.tratamentos{
-    background-color: #007bff;
-    padding: 30px;
-    text-align: center;
-}
-
-.tratamentos h1{
-    color: white;
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.tratamentos img{
-    width: 300px;
-    height: 250px;
-    border-radius: 5px;
-}
-
-.cards-tratamentos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card{
-    background-color: white;
-    width: 350px;
-    padding: 20px;
-    margin: 0 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+.header-content h1 {
+    font-size: 2.8rem;
+    color: #222;
     margin-bottom: 20px;
 }
 
-.card h3{
-    font-size: 20px;
-}
-.card p{
-    text-align: justify;
-    line-height: 1.5;
-}
-
-/*SOBRE*/
-.sobre {
-    padding: 60px;
+.header-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 90%;
 }
 
-.sobre h1 {
-    color: #007bff;
-    font-size: 35px;
+.header-button button {
+    padding: 18px 40px;
+    background: linear-gradient(to left, #007bff, #00bfff);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.header-button button:hover {
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.header-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-img {
+    width: 45%;
+    position: relative;
+    margin-top: 80px;
+}
+
+.header-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*Tratamentos */
+.tratamentos {
+    padding: 80px 80px;
+    background: linear-gradient(to left, #007bff, #00bfff);
     text-align: center;
 }
 
-.sobre p{
-    text-align: justify;
-    font-size: 18px;
+.tratamentos h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.cards-tratamentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 1.1rem;
 }
 
 .dentistas {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.dentistas .dentista2{
+    margin-left: 40px;
+}
+
+.dentista1 {
+    width: 450px;
     padding: 30px;
+    background: linear-gradient(to left, #007bff, #00bfff);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
-.dentista1, .dentista2 {
-    width: 30%;
-    max-width: 500px;
+.dentista2{
+    width: 450px;
     padding: 30px;
-    margin: 50px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    background-color: #007bff;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 18px;
+    background: linear-gradient(to left, #007bff, #00bfff);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-.dentista1 img, .dentista2 img {
-    width: 90%;
-    border-radius: 5px;
+.dentistas img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.dentistas h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dentistas p {
+    font-size: 0.95rem;
+    text-align: center;
+    color: white;
+}
+
+/* Seção de Contato */
+.forms {
+    background-color: #f8f9fa;
+    padding: 80px 5%;
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+    color: #007bff;
     margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
 }
 
-.dentista1, .dentista2 h1 {
-    font-size: 20px;
+.titulo p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/*CONTATOS*/
-.contato-container{
-    display:flex;
+.contato-content {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f8f8f8;
+    justify-content: space-between;
 }
 
-.titulo{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.titulo h1{
-    color: #007bff;
-}
-
-/*As box*/
-.dados{
-    background-color: white;
+.dados {
+    flex: 1;
+    min-width: 300px;
+    background: white;
     padding: 30px;
-    max-width: 500px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    margin: 10px;
-    width: 30%;
-    border: 0;
-    border-radius: 2px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.dados h3{
+.dados h3 {
     color: #007bff;
-    margin-bottom: 10px;
+    margin: 25px 0 15px;
+    font-size: 1.3rem;
 }
 
-.formulario {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    border: 0;
-    border-radius: 2px;
-    width: 30%;
-    font-size: 18px;
-    text-align: center;
+.dados h3:first-child {
+    margin-top: 0;
 }
 
-.formulario input, .formulario textarea{
-    width: 90%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #333;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.formulario button {
-  background-color: white;
-  color: #007bff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-}
-
-.formulario button:hover {
-  background-color: yellow;
-}
-/*editar*/
-.endereco-texto, .telefone{
+.telefone p{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-.endereco-texto img, .telefone img {
-    width: 16px;
-    height: 16px;
+.endereco-texto p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.email p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.telefone img{
+    width: 20px;
     margin-right: 10px;
 }
 
-/*RODAPE*/
-footer {
-    background: linear-gradient(to bottom, #007bff, #65affe);
+.endereco-texto img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.email img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.formulario {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(to left, #007bff, #00bfff);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     color: white;
-    padding: 30px;
+    margin-left: 10px;
+}
+
+.formulario p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(to left, #007bff, #00bfff);
+    color: white;
+    padding: 60px 5% 30px;
+}
+
+.footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo-container {
+    flex: 1;
+    min-width: 250px;
     display: flex;
     align-items: center;
-    flex-basis: 200px;
 }
 
 .logo-footer {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
 }
 
 .logo-footer img {
-    width: 100px;
-    height: auto;
+    width: 70px;
 }
 
 .nome p {
-    font-size: 36px;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-left: 20px;
 }
 
 .endereco {
-    flex-basis: 300px;
+    flex: 1;
+    min-width: 250px;
+    margin: 0 25px 0 25px;
 }
 
 .endereco p:first-child {
     font-weight: 600;
-    margin-bottom: -10px;
-    font-size: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .endereco-texto {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .endereco-texto img {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    margin-top: 3px;
     margin-right: 10px;
 }
 
-.endereco-texto p {
-    font-size: 16px;
+footer .endereco-texto p {
+    font-size: 0.95rem;
+    color: white;
 }
 
 .redes-sociais {
-    flex-basis: 150px;
+    flex: 1;
+    min-width: 150px;
 }
 
 .redes-sociais p {
     font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .social-icons {
@@ -344,9 +482,7 @@ footer {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    
+    width: 35px;
 }
 
 .social-icons a{
@@ -357,6 +493,122 @@ footer {
     margin-left: 0;
 }
 
-.botao-footer{
-    margin-top: 40px;
+.botao-footer {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-footer button {
+    padding: 15px 30px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botao-footer button:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.botao-footer a{
+    color: #007bff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+}
+
+/* DIFERENCIAIS */
+.diferenciais {
+    padding: 60px 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.diferenciais h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.cards-diferenciais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-diferencial {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 30px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-diferencial img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card-diferencial h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-diferencial p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card-diferencial:hover {
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* GALERIA */
+.galeria {
+    padding: 60px 15px;
+    text-align: center;
+}
+
+.galeria h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.galeria-container {
+    text-align: center; 
+}
+
+.foto-galeria {
+    display: inline-block;
+    width: 32%; 
+    margin: 5px 5px 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.galeria p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
 }

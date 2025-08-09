@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    z-index: 10;
+}
+/*apenas com isso a navbat ficou correta na pagina*/
+
+.pagina-tratamento {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-tratamento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem-tratamento{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 70px;
+}
+
+.conteudo-tratamento{
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagem-tratamento img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-tratamento h1 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.conteudo-tratamento h2 {
+    color: #0096c7;
+    margin: 25px 0 15px;
+    font-size: 1.5rem;
+}
+
+.conteudo-tratamento p {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.conteudo-tratamento ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.conteudo-tratamento li {
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+.detalhes-tratamento {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #48cae4;
+}
+
+.info-box h3 {
+    color: #0077b6;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-weight: bold;
+    color: #023e8a;
+    margin: 0;
+}
+

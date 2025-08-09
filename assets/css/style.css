@@ -1,33 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
 }
 
 nav {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 10px;
     background-color: #f8f8f8;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo img {
-    width: 50px;
+    width: 50px; 
     height: auto;
 }
 
 .links ul {
     list-style-type: none;
-    display: flex;
+    display: flex; 
     margin: 0;
     padding: 0;
 }
 
 .links li {
-    margin: 0 10px;
+    margin: 0 10px; 
 }
 
 .links a {
@@ -35,11 +35,7 @@ nav {
     text-decoration: none;
     padding: 15px;
     color: #333;
-    font-weight: 700;
-}
-
-.links a:hover{
-    color: #007bff;
+    font-weight: 500;
 }
 
 .botao-agendar button {
@@ -49,19 +45,11 @@ nav {
     border-radius: 20px;
 }
 
-.botao-agendar a {
+.botao-agendar a{
     font-weight: bold;
     font-size: 14px;
     color: white;
     text-decoration: none;
-}
-
-.botao-agendar button:hover{
-    background: rgb(201, 201, 250);
-}
-
-.botao-agendar a:hover{
-    color: #007bff;
 }
 
 header {
@@ -72,26 +60,26 @@ header {
 }
 
 .header-content {
-    width: 45%;
+    width: 45%; 
 }
 
-.header-content p {
+.header-content p{
     font-size: 20px;
     text-align: justify;
 }
 
-.header-content h1 {
+.header-content h1{
     font-size: 48px;
 }
 
-.header-button button {
+.header-button button{
     padding: 24px 100px;
     background: linear-gradient(to right, #007bff, #65affe);
     border: none;
     border-radius: 10px;
 }
 
-.header-button a {
+.header-button a{
     font-weight: bold;
     font-size: 24px;
     color: white;
@@ -99,7 +87,7 @@ header {
 }
 
 .header-img {
-    width: 45%;
+    width: 45%; 
 }
 
 .header-img img {
@@ -108,11 +96,178 @@ header {
     display: block;
 }
 
-.main {
-    background-color: blue;
-    margin-top: -20px;
+/*TRATAMENTOS*/
+.tratamentos{
+    background-color: #007bff;
+    padding: 30px;
+    text-align: center;
 }
 
+.tratamentos h1{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.tratamentos img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.cards-tratamentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    font-size: 20px;
+}
+.card p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*SOBRE*/
+.sobre {
+    padding: 60px;
+}
+
+.sobre h1 {
+    color: #007bff;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sobre p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.dentistas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: white;
+}
+
+.dentista1, .dentista2 {
+    width: 30%;
+    max-width: 500px;
+    padding: 30px;
+    margin: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.dentista1 img, .dentista2 img {
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.dentista1, .dentista2 h1 {
+    font-size: 20px;
+}
+
+/*CONTATOS*/
+.contato-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.titulo{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.titulo h1{
+    color: #007bff;
+}
+
+/*As box*/
+.dados{
+    background-color: white;
+    padding: 30px;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin: 10px;
+    width: 30%;
+    border: 0;
+    border-radius: 2px;
+}
+
+.dados h3{
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 2px;
+    width: 30%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.formulario input, .formulario textarea{
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.formulario button {
+  background-color: white;
+  color: #007bff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.formulario button:hover {
+  background-color: yellow;
+}
+/*editar*/
+.endereco-texto, .telefone{
+    display: flex;
+    align-items: center;
+}
+
+.endereco-texto img, .telefone img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+/*RODAPE*/
 footer {
     background: linear-gradient(to bottom, #007bff, #65affe);
     color: white;
@@ -205,4 +360,3 @@ footer {
 .botao-footer{
     margin-top: 40px;
 }
-

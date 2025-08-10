@@ -83,3 +83,71 @@ nav {
  .card-noticia button:hover {
      background-color: #0056b3;
  }
+
+
+
+ /* Notícias - Responsivo */
+@media (max-width: 768px) {
+    .noticias-container {
+        justify-content: center; /* Centraliza os cards */
+        gap: 20px; /* Espaço entre os cards */
+    }
+    
+    .card-noticia {
+        width: 48%; /* Dois cards por linha */
+        margin-bottom: 20px;
+    }
+    
+    .card-noticia h3 {
+        font-size: 1.1rem;
+        margin: 12px 15px 8px;
+    }
+    
+    .card-noticia p {
+        font-size: 0.9rem;
+        margin: 0 15px 12px;
+    }
+    
+    .card-noticia button {
+        margin: 0 15px 15px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .noticias {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    .noticias h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .noticias-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-noticia {
+        width: 100%; /* Um card por linha */
+        max-width: 350px; /* Limita a largura máxima */
+    }
+    
+    .card-noticia img {
+        height: 180px; /* Aumenta um pouco a altura */
+    }
+    
+    .card-noticia h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-noticia button {
+        width: calc(100% - 30px); /* Botão ocupando largura total */
+        margin: 0 auto 15px; /* Centraliza o botão */
+        text-align: center;
+        padding: 10px;
+    }
+}

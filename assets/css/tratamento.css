@@ -95,3 +95,88 @@ nav {
     margin: 0;
 }
 
+/* Media Queries para Responsividade */
+
+/* Para tablets (768px) */
+@media (max-width: 768px) {
+    .pagina-tratamento {
+        padding: 30px 15px;
+    }
+    
+    .container-tratamento {
+        flex-direction: column;
+    }
+    
+    .imagem-tratamento {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .conteudo-tratamento h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .conteudo-tratamento h2 {
+        font-size: 1.3rem;
+        margin: 20px 0 12px;
+    }
+    
+    .detalhes-tratamento {
+        margin-top: 20px;
+    }
+    
+    .info-box {
+        min-width: 120px;
+        padding: 12px;
+    }
+}
+
+/* Para celulares (480px) */
+@media (max-width: 480px) {
+    .pagina-tratamento {
+        padding: 20px 10px;
+    }
+    
+    .imagem-tratamento, 
+    .conteudo-tratamento {
+        min-width: 100%;
+    }
+    
+    .conteudo-tratamento h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .conteudo-tratamento h2 {
+        font-size: 1.2rem;
+        margin: 15px 0 10px;
+    }
+    
+    .conteudo-tratamento p {
+        font-size: 0.95rem;
+    }
+    
+    .conteudo-tratamento ul {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    
+    .detalhes-tratamento {
+        flex-direction: column;
+    }
+    
+    .info-box {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .info-box h3 {
+        font-size: 0.95rem;
+    }
+    
+    .info-box p {
+        font-size: 0.9rem;
+    }
+}

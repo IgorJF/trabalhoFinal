@@ -46,3 +46,100 @@ nav {
     color: #343a40;
     position: relative;
 }
+
+
+/* Estilos base que você já tem */
+.projeto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projeto h3 {
+    color: #0077b6;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.projeto p {
+    color: #495057;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.projeto ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.projeto li {
+    margin-bottom: 10px;
+    color: #343a40;
+    position: relative;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para tablets (768px) */
+@media (max-width: 768px) {
+    .projeto {
+        margin: 30px auto;
+        padding: 25px;
+        max-width: 90%; /* Aumenta a largura relativa */
+    }
+    
+    .projeto h3 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .projeto p {
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
+    
+    .projeto ul {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Para celulares (480px) */
+@media (max-width: 480px) {
+    .projeto {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 95%; /* Ocupa quase toda a largura */
+        border-radius: 8px;
+    }
+    
+    .projeto h3 {
+        font-size: 1.3rem;
+        margin-top: 15px;
+        padding-bottom: 6px;
+    }
+    
+    .projeto p {
+        font-size: 0.95rem;
+        line-height: 1.5; /* Melhora a legibilidade */
+    }
+    
+    .projeto ul {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    
+    .projeto li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+}

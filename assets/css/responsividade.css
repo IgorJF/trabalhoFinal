@@ -1,0 +1,203 @@
+/* ... seu CSS existente ... */
+
+/* Media Queries para Responsividade */
+
+/* Para tablets (768px) */
+@media (max-width: 768px) {
+    /* Navegação */
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .links li {
+        margin: 5px 10px;
+    }
+    
+    .botao-agendar {
+        margin-top: 15px;
+    }
+    
+    /* Cabeçalho */
+    header {
+        flex-direction: column;
+        padding: 100px 30px 50px;
+        text-align: center;
+    }
+    
+    .header-content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .header-content p {
+        max-width: 100%;
+    }
+    
+    .header-img {
+        width: 80%;
+        margin-top: 30px;
+    }
+    
+    /* Tratamentos */
+    .tratamentos {
+        padding: 50px 30px;
+    }
+    
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    /* Sobre */
+    .dentistas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dentista1, .dentista2 {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+    
+    .dentistas .dentista2 {
+        margin-left: 0;
+    }
+    
+    /* Contato */
+    .contato-content {
+        flex-direction: column;
+    }
+    
+    .formulario {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    /* Diferenciais */
+    .cards-diferenciais {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-diferencial {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* Galeria */
+    .foto-galeria {
+        width: 48%;
+    }
+    
+    /* Rodapé */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .logo-footer {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .endereco {
+        margin: 0 0 30px 0;
+    }
+    
+    .endereco-texto {
+        justify-content: center;
+    }
+    
+    .redes-sociais {
+        margin-bottom: 30px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Para celulares (480px) */
+@media (max-width: 480px) {
+    /* Navegação */
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .links li {
+        margin: 5px 0;
+    }
+    
+    /* Cabeçalho */
+    header {
+        padding: 100px 20px 40px;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .header-img {
+        width: 100%;
+    }
+    
+    .header-button button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+    
+    /* Tratamentos */
+    .tratamentos h1 {
+        font-size: 2rem;
+    }
+    
+    /* Sobre */
+    .sobre h1 {
+        font-size: 2rem;
+    }
+    
+    /* Contato */
+    .titulo h1 {
+        font-size: 2rem;
+    }
+    
+    .formulario .botoes {
+        flex-direction: column;
+    }
+    
+    .formulario button:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    /* Galeria */
+    .foto-galeria {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    /* Rodapé */
+    .nome p {
+        font-size: 1.5rem;
+    }
+}
